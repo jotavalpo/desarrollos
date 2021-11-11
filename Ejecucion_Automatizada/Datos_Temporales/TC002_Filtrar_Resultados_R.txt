@@ -1,0 +1,2 @@
+PASOS=&Ingreso al sitio de Testim.io-C:\desarrollos\Ejecucion_Automatizada\Print\10112021 193049.png-Pass&Seleccionar Destino-C:\desarrollos\Ejecucion_Automatizada\Print\10112021 193103.png-Pass&Ingreso al sitio de Testim.io-C:\desarrollos\Ejecucion_Automatizada\Print\10112021 193109.png-Pass&Seleccionar Destino-C:\desarrollos\Ejecucion_Automatizada\Print\10112021 193122.png-Pass&Filtrar resultados-C:\desarrollos\Ejecucion_Automatizada\Print\10112021 193131.png-Pass
+ESTADO=true

@@ -1,0 +1,44 @@
+package falabella_Sitio;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import Login.Login;
+import util.BaseTest;
+import util.FunctionGeneric;
+
+public class TC001_Cargar_Home extends BaseTest {
+	public TC001_Cargar_Home() {
+		super();
+	}
+
+	@Test (priority=1)
+	public void TestCargarURLFalabella() {
+		try {
+			login = new Login();
+			FunctionGeneric.driver = login.openUrlFalabellaChrome(
+					FunctionGeneric.leerMatrizTxt("url", matriz));
+			login = new Login(FunctionGeneric.driver);
+			
+			estado = login.validarURL("Falabella.com | Todo lo que necesitas en un solo lugar");
+			if (!FunctionGeneric.stateStep("Ingreso al sitio de Falabella", estado, extent,
+					FunctionGeneric.driver))
+				
+			{
+				flagState = false;
+			}
+			
+			else
+				
+			{
+				flagState = true;
+			}
+			
+			Assert.assertEquals(flagState, true);
+			
+		} catch (Exception e) {
+		System.out.println("Error Test: " + e.getMessage());
+		afterClass();
+		}
+	}
+}

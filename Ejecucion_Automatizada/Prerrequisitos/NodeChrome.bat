@@ -1,0 +1,2 @@
+cd c:\desarrollos\Ejecucion_Automatizada\Prerrequisitos\Node
+java -Dwebdriver.chrome.driver=C:\desarrollos\Ejecucion_Automatizada\Prerrequisitos\driver\chromedriver.exe -jar selenium-server-standalone-3.5.3.jar -role node -hub http://127.0.0.1:8888/grid/register/ -port 5599 -browser "browserName=chrome,maxInstances=1"

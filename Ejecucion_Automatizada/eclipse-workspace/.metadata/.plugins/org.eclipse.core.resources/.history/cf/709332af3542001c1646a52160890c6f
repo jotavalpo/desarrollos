@@ -1,0 +1,189 @@
+package falabella_Sitio;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import Login.Login;
+import falabella.flujoSitio;
+import util.BaseTest;
+import util.FunctionGeneric;
+
+public class TC005_Flujo_completo extends BaseTest {
+	public TC005_Flujo_completo() {
+		super();
+	}
+
+	@Test (priority=14)
+	public void TestCargarURLFalabella() {
+		try {
+			login = new Login();
+			FunctionGeneric.driver = login.openUrlFalabellaChrome(
+					FunctionGeneric.leerMatrizTxt("url", matriz));
+			login = new Login(FunctionGeneric.driver);
+			
+			estado = login.validarURL("Falabella.com | Todo lo que necesitas en un solo lugar");
+			if (!FunctionGeneric.stateStep("Ingreso al sitio de Falabella", estado, extent,
+					FunctionGeneric.driver))
+				
+			{
+				flagState = false;
+			}
+			
+			else
+				
+			{
+				flagState = true;
+			}
+			
+			Assert.assertEquals(flagState, true);
+			
+		} catch (Exception e) {
+		System.out.println("Error Test: " + e.getMessage());
+		afterClass();
+		}
+	}
+	
+	@Test (priority=15)
+	public void SeleccionarCategoria() {
+		try {
+			estado = flujoSitio.ClickCategoria();
+			if (!FunctionGeneric.stateStep("Seleccionar Categoría", estado, extent, FunctionGeneric.driver)) 
+				
+			{
+				flagState = false;
+			}
+			
+			else
+				
+			{
+				flagState = true;
+			}
+			
+			Assert.assertEquals(flagState, true);
+						
+		} catch (Exception e) {
+			System.out.println("Error Test: " + e.getMessage());
+			afterClass();
+		}
+	}
+	
+	@Test (priority=16)
+	public void FiltrarPorMarca() {
+		try {
+			estado = flujoSitio.filtrarBusqueda();
+			if (!FunctionGeneric.stateStep("Filtrar por marca", estado, extent, FunctionGeneric.driver)) 
+				
+			{
+				flagState = false;
+			}
+			
+			else
+				
+			{
+				flagState = true;
+			}
+			
+			Assert.assertEquals(flagState, true);
+						
+		} catch (Exception e) {
+			System.out.println("Error Test: " + e.getMessage());
+			afterClass();
+		}
+	}
+	
+	@Test (priority=17)
+	public void SeleccionarProducto() {
+		try {
+			estado = flujoSitio.seleccionarProducto(FunctionGeneric.leerMatrizTxt("producto", matriz));
+			if (!FunctionGeneric.stateStep("Seleccionar producto", estado, extent, FunctionGeneric.driver)) 
+				
+			{
+				flagState = false;
+			}
+			
+			else
+				
+			{
+				flagState = true;
+			}
+			
+			Assert.assertEquals(flagState, true);
+						
+		} catch (Exception e) {
+			System.out.println("Error Test: " + e.getMessage());
+			afterClass();
+		}
+	}
+	
+	@Test (priority=18)
+	public void SeleccionarTalla() {
+		try {
+			estado = flujoSitio.seleccionarTalla();
+			if (!FunctionGeneric.stateStep("Seleccionar talla", estado, extent, FunctionGeneric.driver))
+				
+			{
+				flagState = false;
+			}
+			
+			else
+				
+			{
+				flagState = true;
+			}
+			
+
+						
+		} catch (Exception e) {
+			System.out.println("Error Test: " + e.getMessage());
+			afterClass();
+		}
+	}
+	
+	@Test (priority=19)
+	public void AgregarAlCarroDeCompras() {
+		try {
+			estado = flujoSitio.agregarAlCarro();
+			if (!FunctionGeneric.stateStep("Agregar al carro de compras", estado, extent, FunctionGeneric.driver)) 
+				
+			{
+				flagState = false;
+			}
+			
+			else
+			
+			{
+				flagState = true;
+			}
+			
+			Assert.assertEquals(flagState, true);
+						
+		} catch (Exception e) {
+			System.out.println("Error Test: " + e.getMessage());
+			afterClass();
+		}
+	}
+	
+	@Test (priority=20)
+	public void VerCarroDeCompras() {
+		try {
+			estado = flujoSitio.verCarro();
+			if (!FunctionGeneric.stateStep("Ver carro de compras", estado, extent, FunctionGeneric.driver)) 
+				
+			{
+				flagState = false;
+			}
+			
+			else
+			
+			{
+				flagState = true;
+			}
+			
+			Assert.assertEquals(flagState, true);
+						
+		} catch (Exception e) {
+			System.out.println("Error Test: " + e.getMessage());
+			afterClass();
+		}
+	}
+}

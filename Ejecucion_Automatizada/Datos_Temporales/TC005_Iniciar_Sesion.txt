@@ -1,0 +1,5 @@
+Proyecto=Buk
+Ciclo=1
+url=http://demo.testim.io/destinations
+usuario=jmontero
+password=123456

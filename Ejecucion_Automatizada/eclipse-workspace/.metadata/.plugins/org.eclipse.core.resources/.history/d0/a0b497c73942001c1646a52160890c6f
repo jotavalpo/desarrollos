@@ -1,0 +1,69 @@
+package asesorEspacial;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import Login.Login;
+import falabella.flujoSitio;
+import util.BaseTest;
+import util.FunctionGeneric;
+
+public class TC004_Revisar_Carro_Compras extends BaseTest {
+	public TC004_Revisar_Carro_Compras() {
+		super();
+	}
+
+	@Test (priority=12)
+	public void TestCargarURLFalabella() {
+		try {
+			login = new Login();
+			FunctionGeneric.driver = login.openUrlFalabellaFirefox(
+					FunctionGeneric.leerMatrizTxt("url", matriz));
+			login = new Login(FunctionGeneric.driver);
+			
+			estado = login.validarURL("Falabella.com | Todo lo que necesitas en un solo lugar");
+			if (!FunctionGeneric.stateStep("Ingreso al sitio de Falabella", estado, extent,
+					FunctionGeneric.driver))
+				
+			{
+				flagState = false;
+			}
+			
+			else
+				
+			{
+				flagState = true;
+			}
+			
+			Assert.assertEquals(flagState, true);
+			
+		} catch (Exception e) {
+		System.out.println("Error Test: " + e.getMessage());
+		afterClass();
+		}
+	}
+
+	@Test (priority=13)
+	public void VerCarroDeCompras() {
+		try {
+			estado = flujoSitio.verCarro();
+			if (!FunctionGeneric.stateStep("Ver carro de compras", estado, extent, FunctionGeneric.driver)) 
+				
+			{
+				flagState = false;
+			}
+			
+			else
+			
+			{
+				flagState = true;
+			}
+			
+			Assert.assertEquals(flagState, true);
+						
+		} catch (Exception e) {
+			System.out.println("Error Test: " + e.getMessage());
+			afterClass();
+		}
+	}
+}

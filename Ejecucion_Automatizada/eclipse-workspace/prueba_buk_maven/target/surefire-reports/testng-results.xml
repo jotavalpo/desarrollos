@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="16" passed="16">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="21032" started-at="2021-11-10T22:30:45Z" finished-at="2021-11-10T22:31:06Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="21032" started-at="2021-11-10T22:30:45Z" finished-at="2021-11-10T22:31:06Z">
+      <class name="asesorEspacial.TC001_Seleccionar_Destino">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:asesorEspacial.TC001_Seleccionar_Destino@76c52298]" name="beforeClass" is-config="true" duration-ms="215" started-at="2021-11-10T22:30:45Z" finished-at="2021-11-10T22:30:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="TestCargarURLTestim()[pri:1, instance:asesorEspacial.TC001_Seleccionar_Destino@76c52298]" name="TestCargarURLTestim" duration-ms="5815" started-at="2021-11-10T22:30:45Z" finished-at="2021-11-10T22:30:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCargarURLTestim -->
+        <test-method status="PASS" signature="SeleccionarDestino()[pri:2, instance:asesorEspacial.TC001_Seleccionar_Destino@76c52298]" name="SeleccionarDestino" duration-ms="13278" started-at="2021-11-10T22:30:51Z" finished-at="2021-11-10T22:31:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SeleccionarDestino -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:asesorEspacial.TC001_Seleccionar_Destino@76c52298]" name="afterClass" is-config="true" duration-ms="1708" started-at="2021-11-10T22:31:04Z" finished-at="2021-11-10T22:31:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- asesorEspacial.TC001_Seleccionar_Destino -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+  <suite name="Suite (1)" duration-ms="32854" started-at="2021-11-10T22:31:34Z" finished-at="2021-11-10T22:32:07Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="32854" started-at="2021-11-10T22:31:34Z" finished-at="2021-11-10T22:32:07Z">
+      <class name="asesorEspacial.TC003_Agregar_Destino_Carro">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:asesorEspacial.TC003_Agregar_Destino_Carro@7cf283e1]" name="beforeClass" is-config="true" duration-ms="1" started-at="2021-11-10T22:31:34Z" finished-at="2021-11-10T22:31:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="TestCargarURLTestim()[pri:6, instance:asesorEspacial.TC003_Agregar_Destino_Carro@7cf283e1]" name="TestCargarURLTestim" duration-ms="4821" started-at="2021-11-10T22:31:34Z" finished-at="2021-11-10T22:31:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCargarURLTestim -->
+        <test-method status="PASS" signature="SeleccionarDestino()[pri:7, instance:asesorEspacial.TC003_Agregar_Destino_Carro@7cf283e1]" name="SeleccionarDestino" duration-ms="13231" started-at="2021-11-10T22:31:39Z" finished-at="2021-11-10T22:31:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SeleccionarDestino -->
+        <test-method status="PASS" signature="FiltrarResultados()[pri:8, instance:asesorEspacial.TC003_Agregar_Destino_Carro@7cf283e1]" name="FiltrarResultados" duration-ms="8629" started-at="2021-11-10T22:31:52Z" finished-at="2021-11-10T22:32:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FiltrarResultados -->
+        <test-method status="PASS" signature="AgregarDestino()[pri:9, instance:asesorEspacial.TC003_Agregar_Destino_Carro@7cf283e1]" name="AgregarDestino" duration-ms="4882" started-at="2021-11-10T22:32:01Z" finished-at="2021-11-10T22:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AgregarDestino -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:asesorEspacial.TC003_Agregar_Destino_Carro@7cf283e1]" name="afterClass" is-config="true" duration-ms="1287" started-at="2021-11-10T22:32:06Z" finished-at="2021-11-10T22:32:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- asesorEspacial.TC003_Agregar_Destino_Carro -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite (1) -->
+  <suite name="Suite (0)" duration-ms="27805" started-at="2021-11-10T22:31:06Z" finished-at="2021-11-10T22:31:34Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="27805" started-at="2021-11-10T22:31:06Z" finished-at="2021-11-10T22:31:34Z">
+      <class name="asesorEspacial.TC002_Filtrar_Resultados">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:asesorEspacial.TC002_Filtrar_Resultados@6fd77352]" name="beforeClass" is-config="true" duration-ms="1" started-at="2021-11-10T22:31:06Z" finished-at="2021-11-10T22:31:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="TestCargarURLTestim()[pri:3, instance:asesorEspacial.TC002_Filtrar_Resultados@6fd77352]" name="TestCargarURLTestim" duration-ms="4677" started-at="2021-11-10T22:31:06Z" finished-at="2021-11-10T22:31:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCargarURLTestim -->
+        <test-method status="PASS" signature="SeleccionarDestino()[pri:4, instance:asesorEspacial.TC002_Filtrar_Resultados@6fd77352]" name="SeleccionarDestino" duration-ms="13190" started-at="2021-11-10T22:31:11Z" finished-at="2021-11-10T22:31:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SeleccionarDestino -->
+        <test-method status="PASS" signature="FiltrarResultados()[pri:5, instance:asesorEspacial.TC002_Filtrar_Resultados@6fd77352]" name="FiltrarResultados" duration-ms="8664" started-at="2021-11-10T22:31:24Z" finished-at="2021-11-10T22:31:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FiltrarResultados -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:asesorEspacial.TC002_Filtrar_Resultados@6fd77352]" name="afterClass" is-config="true" duration-ms="1271" started-at="2021-11-10T22:31:33Z" finished-at="2021-11-10T22:31:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- asesorEspacial.TC002_Filtrar_Resultados -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite (0) -->
+  <suite name="Suite (3)" duration-ms="15840" started-at="2021-11-10T22:32:58Z" finished-at="2021-11-10T22:33:14Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="15840" started-at="2021-11-10T22:32:58Z" finished-at="2021-11-10T22:33:14Z">
+      <class name="asesorEspacial.TC005_Iniciar_Sesion">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:asesorEspacial.TC005_Iniciar_Sesion@8d7b252]" name="beforeClass" is-config="true" duration-ms="2" started-at="2021-11-10T22:32:58Z" finished-at="2021-11-10T22:32:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="TestCargarURLTestim()[pri:15, instance:asesorEspacial.TC005_Iniciar_Sesion@8d7b252]" name="TestCargarURLTestim" duration-ms="4826" started-at="2021-11-10T22:32:58Z" finished-at="2021-11-10T22:33:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCargarURLTestim -->
+        <test-method status="PASS" signature="IniciarSesion()[pri:16, instance:asesorEspacial.TC005_Iniciar_Sesion@8d7b252]" name="IniciarSesion" duration-ms="9739" started-at="2021-11-10T22:33:03Z" finished-at="2021-11-10T22:33:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IniciarSesion -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:asesorEspacial.TC005_Iniciar_Sesion@8d7b252]" name="afterClass" is-config="true" duration-ms="1272" started-at="2021-11-10T22:33:13Z" finished-at="2021-11-10T22:33:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- asesorEspacial.TC005_Iniciar_Sesion -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite (3) -->
+  <suite name="Suite (2)" duration-ms="51483" started-at="2021-11-10T22:32:07Z" finished-at="2021-11-10T22:32:58Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="51483" started-at="2021-11-10T22:32:07Z" finished-at="2021-11-10T22:32:58Z">
+      <class name="asesorEspacial.TC004_Completar_Checkout">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:asesorEspacial.TC004_Completar_Checkout@b10a26d]" name="beforeClass" is-config="true" duration-ms="1" started-at="2021-11-10T22:32:07Z" finished-at="2021-11-10T22:32:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="TestCargarURLTestim()[pri:10, instance:asesorEspacial.TC004_Completar_Checkout@b10a26d]" name="TestCargarURLTestim" duration-ms="4862" started-at="2021-11-10T22:32:07Z" finished-at="2021-11-10T22:32:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCargarURLTestim -->
+        <test-method status="PASS" signature="SeleccionarDestino()[pri:11, instance:asesorEspacial.TC004_Completar_Checkout@b10a26d]" name="SeleccionarDestino" duration-ms="13243" started-at="2021-11-10T22:32:12Z" finished-at="2021-11-10T22:32:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SeleccionarDestino -->
+        <test-method status="PASS" signature="FiltrarResultados()[pri:12, instance:asesorEspacial.TC004_Completar_Checkout@b10a26d]" name="FiltrarResultados" duration-ms="8685" started-at="2021-11-10T22:32:25Z" finished-at="2021-11-10T22:32:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FiltrarResultados -->
+        <test-method status="PASS" signature="AgregarDestino()[pri:13, instance:asesorEspacial.TC004_Completar_Checkout@b10a26d]" name="AgregarDestino" duration-ms="4936" started-at="2021-11-10T22:32:34Z" finished-at="2021-11-10T22:32:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AgregarDestino -->
+        <test-method status="PASS" signature="CompletarCheckout()[pri:14, instance:asesorEspacial.TC004_Completar_Checkout@b10a26d]" name="CompletarCheckout" duration-ms="18471" started-at="2021-11-10T22:32:39Z" finished-at="2021-11-10T22:32:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CompletarCheckout -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:asesorEspacial.TC004_Completar_Checkout@b10a26d]" name="afterClass" is-config="true" duration-ms="1282" started-at="2021-11-10T22:32:57Z" finished-at="2021-11-10T22:32:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- asesorEspacial.TC004_Completar_Checkout -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite (2) -->
+</testng-results>

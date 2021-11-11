@@ -1,0 +1,117 @@
+package asesorEspacial;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import Login.Login;
+import falabella.flujoSitio;
+import util.BaseTest;
+import util.FunctionGeneric;
+
+public class TC002_Cargar_Ficha_Producto extends BaseTest {
+	public TC002_Cargar_Ficha_Producto() {
+		super();
+	}
+
+	@Test (priority=2)
+	public void TestCargarURLFalabella() {
+		try {
+			login = new Login();
+			FunctionGeneric.driver = login.openUrlFalabellaFirefox(
+					FunctionGeneric.leerMatrizTxt("url", matriz));
+			login = new Login(FunctionGeneric.driver);
+			
+			estado = login.validarURL("Falabella.com | Todo lo que necesitas en un solo lugar");
+			if (!FunctionGeneric.stateStep("Ingreso al sitio de Falabella", estado, extent,
+					FunctionGeneric.driver))
+				
+			{
+				flagState = false;
+			}
+			
+			else
+				
+			{
+				flagState = true;
+			}
+			
+			Assert.assertEquals(flagState, true);
+			
+		} catch (Exception e) {
+		System.out.println("Error Test: " + e.getMessage());
+		afterClass();
+		}
+	}
+		
+	@Test (priority=3)
+	public void SeleccionarCategoria() {
+		try {
+			estado = flujoSitio.ClickCategoria();
+			if (!FunctionGeneric.stateStep("Seleccionar Categoría", estado, extent, FunctionGeneric.driver)) 
+				
+			{
+				flagState = false;
+			}
+			
+			else
+				
+			{
+				flagState = true;
+			}
+			
+			Assert.assertEquals(flagState, true);
+						
+		} catch (Exception e) {
+			System.out.println("Error Test: " + e.getMessage());
+			afterClass();
+		}
+	}
+	
+	@Test (priority=4)
+	public void FiltrarPorMarca() {
+		try {
+			estado = flujoSitio.filtrarBusqueda();
+			if (!FunctionGeneric.stateStep("Filtrar por marca", estado, extent, FunctionGeneric.driver)) 
+				
+			{
+				flagState = false;
+			}
+			
+			else
+				
+			{
+				flagState = true;
+			}
+			
+			Assert.assertEquals(flagState, true);
+						
+		} catch (Exception e) {
+			System.out.println("Error Test: " + e.getMessage());
+			afterClass();
+		}
+	}
+	
+	@Test (priority=5)
+	public void SeleccionarProducto() {
+		try {
+			estado = flujoSitio.seleccionarProducto(FunctionGeneric.leerMatrizTxt("producto", matriz));
+			if (!FunctionGeneric.stateStep("Seleccionar producto", estado, extent, FunctionGeneric.driver)) 
+				
+			{
+				flagState = false;
+			}
+			
+			else
+				
+			{
+				flagState = true;
+			}
+			
+			Assert.assertEquals(flagState, true);
+						
+		} catch (Exception e) {
+			System.out.println("Error Test: " + e.getMessage());
+			afterClass();
+		}
+	}
+}

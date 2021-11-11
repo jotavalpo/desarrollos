@@ -1,0 +1,2 @@
+cd c:\desarrollos\Ejecucion_Automatizada\Prerrequisitos\Node
+java -Dwebdriver.gecko.driver=C:\desarrollos\Ejecucion_Automatizada\Prerrequisitos\driver\geckodriver.exe -jar selenium-server-standalone-3.5.3.jar -role node -hub http://127.0.0.1:8888/grid/register/ -port 5577 -browser "browserName=firefox,maxInstances=1"

@@ -1,0 +1,4 @@
+Proyecto=Buk
+Ciclo=1
+url=http://demo.testim.io/destinations
+valorMaximo=1000

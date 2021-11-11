@@ -1,0 +1,9 @@
+Proyecto=Buk
+Ciclo=1
+url=http://demo.testim.io/destinations
+valorMaximo=1000
+nombre=Jorge Montero
+email=jorge.valpo@hotmail.com
+seguroSocial=123-45-6789
+telefono=915934005
+codPromocion=123456

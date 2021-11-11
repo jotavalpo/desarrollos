@@ -1,0 +1,195 @@
+package demoTestim;
+
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import util.FunctionGeneric;
+
+public class flujoSitio {
+
+	WebDriver driver;
+
+	public void siteTestim(WebDriver driver) {
+		this.driver = driver;
+	}
+
+	public static String SeleccionarDestino () {
+
+		String msg = "OK";
+
+		try {
+			
+			msg = FunctionGeneric.clickObjectByXpath("Click en Seleccionar Departing", "//*[@id=\'app\']/div/section[1]/div[3]/div/div[1]/div/div/input", "click", FunctionGeneric.driver);
+			Thread.sleep(1000);
+			if (!msg.equals("OK"))
+				return msg;
+			
+			msg = FunctionGeneric.clickObjectByXpath("Seleccionar fecha de calendario", "/html/body/div[2]/div/div[2]/section/div/div/div/span/div/div[2]/div[15]/span", "click", FunctionGeneric.driver);
+			Thread.sleep(1000);
+			if (!msg.equals("OK"))
+				return msg;
+			
+			msg = FunctionGeneric.clickObjectByXpath("Click en OK de calendario", "/html/body/div[2]/div/div[2]/nav/button[2]", "click", FunctionGeneric.driver);
+			Thread.sleep(1000);
+			if (!msg.equals("OK"))
+				return msg;
+			
+			msg = FunctionGeneric.clickObjectByXpath("Click en Seleccionar Returning", "//*[@id=\'app\']/div/section[1]/div[3]/div/div[2]/div/div/input", "click", FunctionGeneric.driver);
+			Thread.sleep(1000);
+			if (!msg.equals("OK"))
+				return msg;
+			
+			msg = FunctionGeneric.clickObjectByXpath("Seleccionar fecha de calendario", "/html/body/div[2]/div/div[2]/section/div/div/div/span/div/div[2]/div[21]/span", "click", FunctionGeneric.driver);
+			Thread.sleep(1000);
+			if (!msg.equals("OK"))
+				return msg;
+			
+			msg = FunctionGeneric.clickObjectByXpath("Click en OK de calendario", "/html/body/div[2]/div/div[2]/nav/button[2]", "click", FunctionGeneric.driver);
+			Thread.sleep(1000);
+			if (!msg.equals("OK"))
+				return msg;
+						
+			msg = FunctionGeneric.clickObjectByXpath("Click en selector de Adults (18+)", "//*[@id=\'app\']/div/section[1]/div[3]/div/div[3]", "click", FunctionGeneric.driver);
+			Thread.sleep(1000);
+			if (!msg.equals("OK"))
+				return msg;
+			
+			msg = FunctionGeneric.clickObjectByXpath("Click en opción 2 adultos", "//*[@id=\'app\']/div/section[1]/div[3]/div/div[3]/ul/li[3]", "click", FunctionGeneric.driver);
+			Thread.sleep(1000);
+			if (!msg.equals("OK"))
+				return msg;
+			
+			msg = FunctionGeneric.clickObjectByXpath("Click en selector de Children (0-7)", "//*[@id=\'app\']/div/section[1]/div[3]/div/div[4]", "click", FunctionGeneric.driver);
+			Thread.sleep(1000);
+			if (!msg.equals("OK"))
+				return msg;
+			
+			msg = FunctionGeneric.clickObjectByXpath("Click en opción 2 niños", "//*[@id=\'app\']/div/section[1]/div[3]/div/div[4]/ul/li[3]", "click", FunctionGeneric.driver);
+			Thread.sleep(1000);
+			if (!msg.equals("OK"))
+				return msg;
+			
+		} catch (Exception e) {
+			msg = "Error al buscar destino";
+		}
+
+		return msg;
+	}
+	
+	public static String filtrarResultados (String valorMaximo) {
+
+		String msg = "OK";
+
+		try {
+			
+			msg = FunctionGeneric.clickObjectByXpath("Seleccionar lugar de lanzamiento (Launch)", "//*[@id=\'app\']/div/section[2]/div[4]/div/div/div[1]/div/input", "click", FunctionGeneric.driver);
+			Thread.sleep(1000);
+			if (!msg.equals("OK"))
+				return msg;
+			
+			FunctionGeneric.driver.findElement(By.xpath("//*[@id=\'app\']/div/section[2]/div[4]/div/div/div[1]/ul/li[2]")).click();
+			Thread.sleep(1000);
+			if (!msg.equals("OK"))
+			return msg;
+			
+			msg = FunctionGeneric.clickObjectByXpath("Seleccionar color del planeta (Planet color)", "//*[@id=\'app\']/div/section[2]/div[4]/div/div/div[2]/div/input", "click", FunctionGeneric.driver);
+			Thread.sleep(1000);
+			if (!msg.equals("OK"))
+				return msg;
+			
+			FunctionGeneric.driver.findElement(By.xpath("//*[@id=\'app\']/div/section[2]/div[4]/div/div/div[2]/ul/li[3]")).click();
+			Thread.sleep(1000);
+			if (!msg.equals("OK"))
+			return msg;
+			
+			msg = FunctionGeneric.setTextObject("Definir rango máximo precio", "class", "theme__inputElement___27dyY theme__filled___1UI7Z", valorMaximo, "set", false, FunctionGeneric.driver);
+			Thread.sleep(1000);
+			if (!msg.equals("OK"))
+				return msg;
+
+		} catch (Exception e) {
+			msg = "Error al filtrar por marca";
+		}
+
+		return msg;
+	}
+
+	public static String seleccionarProducto (String producto) {
+
+		String msg = "OK";
+
+		try {
+			
+			msg = FunctionGeneric.clickObjectByXpath("Click en producto", "a", "href", producto, "click", FunctionGeneric.driver);
+			Thread.sleep(1000);
+			if (!msg.equals("OK"))
+				return msg;
+
+		} catch (Exception e) {
+			msg = "Error al seleccionar producto";
+		}
+
+		return msg;
+	}
+	
+	public static String seleccionarTalla () {
+
+		String msg = "OK";
+
+		try {
+			
+			msg = FunctionGeneric.clickObjectByXpath("Seleccionar talla", "button", "id", "testId-sizeButton-S", "click", FunctionGeneric.driver);
+			Thread.sleep(1000);
+			if (!msg.equals("OK"))
+				return msg;
+
+		} catch (Exception e) {
+			msg = "Error al seleccionar talla";
+		}
+
+		return msg;
+	}
+	
+	public static String agregarAlCarro () {
+
+		String msg = "OK";
+
+		try {
+			
+			msg = FunctionGeneric.clickObjectByXpath("Agregar al carro", "//*[@id=\'buttonForCustomers\']/button", "click", FunctionGeneric.driver);
+			Thread.sleep(1000);
+			if (!msg.equals("OK"))
+				return msg;
+			
+			msg = FunctionGeneric.clickObjectByXpath("Botón cerrar modal", "//*[@id=\'__next\']/div/div/div/div/div/div/div[1]/button", "click", FunctionGeneric.driver);
+			Thread.sleep(1000);
+			if (!msg.equals("OK"))
+				return msg;
+			
+		} catch (Exception e) {
+			msg = "Error al agregar al carro";
+		}
+
+		return msg;
+	}
+	
+	public static String verCarro () {
+
+		String msg = "OK";
+
+		try {
+			
+			msg = FunctionGeneric.clickObjectByXpath("Ver carro de compras", "//*[@id=\'testId-UserAction-basket\']/i", "click", FunctionGeneric.driver);
+			Thread.sleep(1000);
+			if (!msg.equals("OK"))
+				return msg;
+			
+		} catch (Exception e) {
+			msg = "Error al hacer click en carro";
+		}
+
+		return msg;
+	}
+}
